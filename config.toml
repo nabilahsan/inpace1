@@ -76,7 +76,7 @@ googleAnalytics = ""
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Welcome To Our Studio!"
+    title = "Welcome To INPACE!"
     subtitle = "It's nice to meet you"
     buttonText = "Tell me more"
 
@@ -84,27 +84,27 @@ googleAnalytics = ""
   # Services section
   [params.services]
     enable = true
-    title = "Services"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "What we do"
+    subtitle = ""
 
     [[params.services.row]]
 
     [[params.services.row.list]]
       icon = "fa-shopping-cart"
-      title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      title = "INTEGRATED MARKETING SUPPORT"
+      description = "Integrating all the promotional tools, so that we can work together to increase the Products or services Band Value, Image, Identity and a mark."
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-laptop"
-      title = "Responsive Design"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      title = "PROMOTION SERVICES"
+      description = "Promotions are events, activities, sponsorships, and contests that create and increase awareness of your product or service among the consumers."
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-lock"
-      title = "Web"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      title = "MEDIA & PR MANAGEMENT"
+      description = "Creating paid announcements to be promoted through different types of media including online, print, TV, out-of-home and radio."
       url = "#"
 
   # Portfolio section
