@@ -1,7 +1,7 @@
 # Site settings
 baseurl = ""
 languageCode = "en-us"
-title = "Inpace"
+title = "INPACE"
 theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
@@ -46,9 +46,9 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "The Agency"
+    #brand = "Inpace"
     # Optional logo as brand stored in img/
-    #logo = "logo.svg"
+    logo = "logo.png"
     services = "Services"
     portfolio = "Portfolio"
     about = "About"
