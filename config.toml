@@ -77,7 +77,7 @@ googleAnalytics = ""
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
     title = "Welcome To INPACE!"
-    subtitle = "It's nice to meet you"
+    subtitle = ""
     buttonText = "Tell me more"
 
 
