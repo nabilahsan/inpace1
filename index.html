@@ -1,40 +1,120 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>INPACE</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <link rel="stylesheet" href="resources/css/main.css">
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <!-- Navigation Bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" id="inpacelogo" class="active">
+      <img id="ilogo" src="resources/img/inpace-Logo.png" alt="Inpace Logo">
+    </a>
+    <a id="links" href="#s1">About Us</a>
+    <a id="links" href="#s2">Services</a>
+    <a id="links" href="#s3">Clients</a>
+    <a id="links" href="#s4">Team</a>
+    <a id="links" href="#s5">Contact Us</a>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- Who We Are -->
+  <div id="s1" class="container jumbotron">
+    <h1>We are Inpace</h1>
+    <p>
+      At Inpace, we strive to be the most reliable and creative event company in Bangladesh, always delivering a high
+      standard of quality and value for money to our customers.
+    </p>
+    <p>
+      We work in close partnership with our customers to
+      offer a service that sets new standards in event management. Each event is a custom project, irrespective of size
+      or budget. This is what it makes us different.
+    </p>
+    <p>
+      The diverse skills and considerable experience within the
+      personnel at Inpace is what really gives us the ability to stand out from the crowd, and we can ensure that your
+      events do the same.
+    </p>
+    <p>
+      Relationships are key to the Inpace philosophy, and with this in mind we concentrate on
+      building strong relationships with our customers. We listen and constantly re-address the ever-changing needs of
+      our customers to ensure that we are always ahead of the game.
+    </p>
+
+  </div>
+
+  <!-- What We Do -->
+  <div id="s2" class="container jumbotron">
+    <h1>Our Services</h1>
+
+    <!-- Column 1 -->
+
+    <!-- Column 2 -->
+  </div>
+
+  <!-- Our Clients -->
+  <div id="s3" class="container">
+
+  </div>
+
+  <!-- Grid of all the company logos -->
+  <div id="" class="container">
+
+  </div>
+
+
+  <!-- Our Team -->
+  <div id="s4" class="container">
+
+  </div>
+
+  <!-- Contact Us -->
+  <div id="s5" class="container">
+
+  </div>
+
+  <!-- Footer -->
+
+  <!-- Scripts -->
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="vendor/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="vendor/js/plugins.js"></script>
+  <script src="vendor/js/main.js"></script>
+
+
 </body>
 
 </html>
