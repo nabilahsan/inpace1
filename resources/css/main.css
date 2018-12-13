@@ -11,8 +11,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+li{
+    list-style-type: none;
+}
+
 h1{
     font-size: 10em;
+}
+
+h2{
+    font-size: 5em;
 }
 
 /* ============================================================================ */
@@ -120,29 +128,51 @@ h1{
 /* Section 1 */
 /* ============================================================================ */
 #s1{
-    margin-top: 125px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#heading, #para {
+}
+
+#heading {
+    
+}
+
+#para {
+
+    margin-top: 100px;
 }
 
 #s1 p {
-    margin-top: 15px;
     font-size: 1.7em;
+
+    margin: 25px 25px 0 100px;
 }
 
-#s1 h1, p{
-    margin: 0 25px 0 25px;
-}
 
 /* ============================================================================ */
 /* Section 2 */
 /* ============================================================================ */
-#s2 p {
+#s2{
+
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#services{
+    margin-top: 125px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#s2 li {
     margin-top: 15px;
-    font-size: 1.7em;
+    font-size: 2.5em;
 }
 
-#s2 h1, p{
-    margin: 0 25px 0 25px;
-}
 
 
 /* ============================================================================ */
