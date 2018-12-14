@@ -136,7 +136,7 @@ h2 {
     padding-right: 50px;
     padding-left: 50px;
     padding-top: 150px;
-    height: 90vh;
+    height: 100vh;
     background-color: #9c0b08;
     color: white;
 }
@@ -258,14 +258,36 @@ h2 {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) and (max-width: 1361) {
+    #s1 {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    #s1 {
+        height: 100vh;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    #s1 p {
+        margin: 50px 0 0 100px;
+    }
+
+    #godown {
+
+        margin: 50px 0 0 100px;
+    }
+
+}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -353,7 +375,6 @@ h2 {
     #godown {
         text-align: center;
         margin: 50px 0 100px 0;
-
         padding: 10px 25px 10px 25px;
     }
 
@@ -523,29 +544,33 @@ h2 {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: auto;
+        height: 100vh;
         padding-right: 10px;
         padding-left: 10px;
         text-align: center;
-
     }
 
     #s1 h1 {
-        font-size: 4em;
+        font-size: 5em;
         text-align: center;
         margin: 0;
     }
 
     #s1 p {
-        font-size: 2em;
+        font-size: 1.8em;
         padding: 0;
         margin: 0 10px 0 10px;
     }
 
     #godown {
         text-align: center;
-        width: 50%;
+        font-size: 1.5em;
         margin: 50px 0 100px 0;
+        padding: 10px 25px 10px 25px;
+    }
+
+    #para {
+        margin-top: 25px;
     }
 
     /* Services */
