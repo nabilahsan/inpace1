@@ -2,24 +2,26 @@
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url(/vendor/img/connections.svg);
-    background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 0H0v36h36V0zM15.126 2H2v13.126c.367.094.714.24 1.032.428L15.554 3.032c-.188-.318-.334-.665-.428-1.032zM18 4.874V18H4.874c-.094-.367-.24-.714-.428-1.032L16.968 4.446c.318.188.665.334 1.032.428zM22.874 2h11.712L20 16.586V4.874c1.406-.362 2.512-1.468 2.874-2.874zm10.252 18H20v13.126c.367.094.714.24 1.032.428l12.522-12.522c-.188-.318-.334-.665-.428-1.032zM36 22.874V36H22.874c-.094-.367-.24-.714-.428-1.032l12.522-12.522c.318.188.665.334 1.032.428zm0-7.748V3.414L21.414 18h11.712c.362-1.406 1.468-2.512 2.874-2.874zm-18 18V21.414L3.414 36h11.712c.362-1.406 1.468-2.512 2.874-2.874zM4.874 20h11.712L2 34.586V22.874c1.406-.362 2.512-1.468 2.874-2.874z' fill='%23ff0000' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-h1{
+h1 {
     font-size: 10em;
 }
 
-h2{
+h2 {
     font-size: 5em;
 }
 
@@ -127,20 +129,23 @@ h2{
 /* ============================================================================ */
 /* Section 1 */
 /* ============================================================================ */
-#s1{
+#s1 {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-right: 50px;
-    margin-left: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 150px;
+    height: 100vh;
+    background-color: #9c0b08;
+    color: white;
+
 }
 
-#heading, #para {
-}
+#heading,
+#para {}
 
-#heading {
-    
-}
+#heading {}
 
 #para {
 
@@ -157,20 +162,68 @@ h2{
 /* ============================================================================ */
 /* Section 2 */
 /* ============================================================================ */
-#s2{
-
-    margin-right: 50px;
-    margin-left: 50px;
+#s2 {
+    padding-top: 100px;
+    height: 100vh;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 150px;
+    background-color: #f1f2f6;
+    color: black;
 }
-#services{
-    margin-top: 125px;
+
+#services {
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
+
 #s2 li {
-    margin-top: 15px;
+    margin-top: 45px;
     font-size: 2.5em;
+}
+
+#s2 p {
+    font-size: 0.65em;
+}
+
+/* ============================================================================ */
+/* Section 3 */
+/* ============================================================================ */
+#s3 {
+    padding-top: 100px;
+    height: 100vh;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-image: url(/vendor/img/connections.svg);
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 0H0v36h36V0zM15.126 2H2v13.126c.367.094.714.24 1.032.428L15.554 3.032c-.188-.318-.334-.665-.428-1.032zM18 4.874V18H4.874c-.094-.367-.24-.714-.428-1.032L16.968 4.446c.318.188.665.334 1.032.428zM22.874 2h11.712L20 16.586V4.874c1.406-.362 2.512-1.468 2.874-2.874zm10.252 18H20v13.126c.367.094.714.24 1.032.428l12.522-12.522c-.188-.318-.334-.665-.428-1.032zM36 22.874V36H22.874c-.094-.367-.24-.714-.428-1.032l12.522-12.522c.318.188.665.334 1.032.428zm0-7.748V3.414L21.414 18h11.712c.362-1.406 1.468-2.512 2.874-2.874zm-18 18V21.414L3.414 36h11.712c.362-1.406 1.468-2.512 2.874-2.874zM4.874 20h11.712L2 34.586V22.874c1.406-.362 2.512-1.468 2.874-2.874z' fill='%23ff0000' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+}
+
+#row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#col {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    padding: 50px;
 }
 
 
@@ -183,7 +236,56 @@ h2{
 /* Media Queries */
 /* ============================================================================ */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    #col {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/*Media Queries*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #col {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
 
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
@@ -194,9 +296,7 @@ h2{
         float: right;
         display: block;
     }
-}
 
-@media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
     }
@@ -227,13 +327,72 @@ h2{
         text-align: left;
     }
 
-    a.icon{
+    a.icon {
         font-size: 15px;
         padding: 10px;
     }
 
-    #inpacelogo{
+    #inpacelogo {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    /* Section 3 */
+    #col {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    a.icon {
+        font-size: 15px;
+        padding: 10px;
     }
 }
