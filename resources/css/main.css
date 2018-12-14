@@ -139,13 +139,7 @@ h2 {
     height: 100vh;
     background-color: #9c0b08;
     color: white;
-
 }
-
-#heading,
-#para {}
-
-#heading {}
 
 #para {
 
@@ -158,6 +152,20 @@ h2 {
     margin: 25px 25px 0 100px;
 }
 
+#godown {
+    margin: 100px 0 0 100px;
+    border-radius: 50px;
+    width: 15%;
+    font-size: 1.8em;
+    color: white;
+    background-color: #2222228c;
+}
+
+#godown:hover {
+    background-color: black;
+    color: white;
+    transition: ease-in-out 0.2s;
+}
 
 /* ============================================================================ */
 /* Section 2 */
@@ -266,10 +274,92 @@ h2 {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* Navigation bar */
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    a.icon {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+
     #col {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
+    }
+
+    /* Services */
+
+
+    #s2 {
+        height: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #s2 h2 {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    #s2 h3 {
+        font-size: 0.8em;
+    }
+
+    #s2 p {
+        font-size: 0.7em;
+    }
+
+    #s2 ul {
+        padding-inline-start: 10px;
+    }
+
+    #s2 li {
+        margin-top: 35px;
+    }
+
+    #services {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -351,6 +441,8 @@ h2 {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+    /* Navigation Bar */
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
         display: none;
@@ -394,5 +486,54 @@ h2 {
     a.icon {
         font-size: 15px;
         padding: 10px;
+    }
+
+    /* Global for Mobile */
+
+    /* About Us */
+    #s1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 200px;
+    }
+
+    /* Services */
+
+
+    #s2 {
+        height: auto;
+
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    #s2 h2 {
+        font-size: 3.5em;
+    }
+
+    #s2 h3 {
+        font-size: 0.7em;
+    }
+
+    #s2 p {
+        font-size: 0.5em;
+    }
+
+    #s2 ul {
+        padding-inline-start: 10px;
+    }
+
+    #s2 li {
+        margin-top: 25px;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
