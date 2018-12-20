@@ -29,83 +29,6 @@ h2 {
 /* Navigation Bar */
 /* ============================================================================ */
 
-/* W3 Nav style */
-.topnav {
-    overflow: hidden;
-    background-color: #9c0b08;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.active {
-    background-color: #9c0b08;
-    color: white;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 17px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.topnav a:hover,
-.dropdown:hover .dropbtn {
-    background-color: #9c0b08;
-    color: white;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 /* Developer Nav Style */
 #inpacelogo {
     padding-top: 5px;
@@ -122,9 +45,10 @@ h2 {
 }
 
 #links:hover {
-    background-color: #4b0504;
-    ;
+    color: #4b0504;
 }
+
+
 
 /* ============================================================================ */
 /* Section 1 */
@@ -135,29 +59,27 @@ h2 {
     flex-direction: row;
     padding-right: 50px;
     padding-left: 50px;
-    padding-top: 150px;
+    padding-top: 50px;
     height: 100vh;
     background-color: #9c0b08;
     color: white;
 }
 
-#para {
-    margin-top: 100px;
-}
-
-#s1 p {
-    font-size: 3em;
-    margin: 50px 0 0 200px;
-}
-
-
 #godown {
-    margin: 100px 0 0 200px;
-    border-radius: 50px;
-    padding: 10px 25px 10px 25px;
-    font-size: 2em;
-    color: white;
-    background-color: #2222228c;
+    padding: 15px 25px 15px 25px;
+    font-size: 3em;
+    color: black;
+    background-color: #fffb00;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#contactbtn {
+    padding: 15px 25px 15px 25px;
+    font-size: 3em;
+    color: black;
+    background-color: rgb(63, 199, 0);
+    text-align: center;
 }
 
 #godown:hover {
@@ -165,6 +87,13 @@ h2 {
     color: white;
     transition: ease-in-out 0.2s;
 }
+
+#contactbtn:hover {
+    background-color: rgb(47, 0, 255);
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+
 
 /* ============================================================================ */
 /* Section 2 */
@@ -233,12 +162,6 @@ h2 {
 /* Section 4 */
 /* ============================================================================ */
 
-#s4 {
-    padding-top: 100px;
-    height: auto;
-    width: 100%;
-    background-color: #ffffff;
-}
 
 
 /* ============================================================================ */
@@ -252,12 +175,14 @@ h2 {
     background-color: #ffffff;
 }
 
-#s5 h3{
+#s5 h3 {
     font-size: 3em;
     text-align: center;
 }
 
-#s5 p, span,{
+#s5 p,
+span,
+    {
     font-size: 1.5em;
 }
 
@@ -265,6 +190,33 @@ h2 {
     font-size: 1.2em;
 }
 
+/* Mailchimp Styles */
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
+
+#mc-embedded-subscribe-form input[type=checkbox] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
+
+#mergeRow-gdpr {
+    margin-top: 20px;
+}
+
+#mergeRow-gdpr fieldset label {
+    font-weight: normal;
+}
+
+#mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
+}
 
 
 /* ============================================================================ */
@@ -275,9 +227,7 @@ h2 {
 /* Media Queries */
 /* ============================================================================ */
 
-@media screen and (max-width: 800px) {
-
-}
+@media screen and (max-width: 800px) {}
 
 /*Media Queries*/
 
@@ -315,6 +265,13 @@ h2 {
         margin: 50px 0 0 100px;
     }
 
+    /* Our Clients */
+
+
+    #col img {
+        width: 30%;
+    }
+
 }
 
 /* 
@@ -325,77 +282,33 @@ h2 {
 /* Also includes iPad */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    /* Navigation bar */
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .topnav.responsive .dropdown {
-        float: none;
-    }
-
-    .topnav.responsive .dropdown-content {
-        position: relative;
-    }
-
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-
-    a.icon {
-        font-size: 15px;
-        padding: 10px;
-    }
-
     /* About Us */
     #s1 {
         display: flex;
         justify-content: center;
         flex-direction: column;
         height: 100vh;
-        padding-right: 10px;
-        padding-left: 10px;
         text-align: center;
     }
 
     #s1 h1 {
-        text-align: center;
-        margin: 0;
+        font-size: 8em;
+        text-align: start;
     }
 
-    #s1 p {
-        padding: 0;
-        margin: 0 10px 0 10px;
-    }
 
     #godown {
         text-align: center;
-        margin: 50px 0 100px 0;
-        padding: 10px 25px 10px 25px;
+        font-size: 2em;
+        margin: 0 0 50px 0;
+    }
+
+    #mainbuttons {
+        display: flex;
+    }
+
+    #mainbuttons a {
+        margin-right: 50px;
     }
 
     /* Services */
@@ -432,7 +345,7 @@ h2 {
     }
 
     #col img {
-        width: 30%;
+        width: 20%;
     }
 
 }
@@ -451,50 +364,6 @@ h2 {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .topnav.responsive .dropdown {
-        float: none;
-    }
-
-    .topnav.responsive .dropdown-content {
-        position: relative;
-    }
-
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-
-    a.icon {
-        font-size: 15px;
-        padding: 10px;
-    }
 
     #inpacelogo {
         padding-top: 10px;
@@ -514,9 +383,8 @@ h2 {
         font-size: 3.5em;
     }
 
-
     #col img {
-        width: 100%;
+        width: 30%;
     }
 
     #col {
@@ -532,52 +400,6 @@ h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    /* Navigation Bar */
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .topnav.responsive .dropdown {
-        float: none;
-    }
-
-    .topnav.responsive .dropdown-content {
-        position: relative;
-    }
-
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-
-    a.icon {
-        font-size: 15px;
-        padding: 10px;
-    }
-
     /* Global for Mobile */
 
     /* About Us */
@@ -586,32 +408,24 @@ h2 {
         justify-content: center;
         flex-direction: column;
         height: 100vh;
-        padding-right: 10px;
-        padding-left: 10px;
         text-align: center;
     }
 
     #s1 h1 {
-        font-size: 5em;
-        text-align: center;
-        margin: 0;
+        font-size: 4em;
+        text-align: start;
     }
 
-    #s1 p {
-        font-size: 1.8em;
-        padding: 0;
-        margin: 0 10px 0 10px;
-    }
 
     #godown {
         text-align: center;
         font-size: 1.5em;
-        margin: 50px 0 100px 0;
-        padding: 10px 25px 10px 25px;
+        margin: 0 0 50px 0;
     }
 
-    #para {
-        margin-top: 25px;
+    #mainbuttons {
+        display: flex;
+        justify-content: space-between;
     }
 
     /* Services */
@@ -619,7 +433,7 @@ h2 {
 
     #s2 {
         height: auto;
-        padding-top: 50px;
+        padding-top: 25px;
         padding-right: 10px;
         padding-left: 10px;
         text-align: center;
@@ -630,7 +444,7 @@ h2 {
     }
 
     #s2 h3 {
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
 
     #s2 p {
@@ -656,10 +470,11 @@ h2 {
     /* Clients */
     #s3 {
         height: auto;
-        padding-top: 50px;
+        padding-top: 25px;
         padding-right: 10px;
         padding-left: 10px;
         text-align: center;
+        margin-bottom: 50px;
     }
 
     #s3 h2 {
@@ -668,11 +483,18 @@ h2 {
 
 
     #col img {
-        width: 100%;
+        width: 25%;
     }
 
     #col {
         text-align: center;
         flex: 0%;
+    }
+
+    /* Contact us */
+    #signup {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
